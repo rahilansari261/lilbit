@@ -72,6 +72,7 @@ const CreatePost: React.FC = () => {
       <TouchableOpacity
         className="rounded bg-pink-400 p-2"
         onPress={() => {
+          console.log("hello");
           mutate({
             title,
             content,
