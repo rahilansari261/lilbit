@@ -41,6 +41,10 @@ const CreatePost: React.FC = () => {
       setContent("");
       await utils.post.all.invalidate();
     },
+    async onError(){
+      console.log("inside mutation func")
+      console.log(error)
+    }
   });
 
   return (
